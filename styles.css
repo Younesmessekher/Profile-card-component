@@ -1,0 +1,98 @@
+body{ 
+    
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    background:
+    url(images/bg-pattern-top.svg)  top left  ,url(images/bg-pattern-bottom.svg)   no-repeat bottom content-box;
+    background-color: hsl(185, 75%, 39%);
+    background-position: top  left  , bottom right; 
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 52vw bottom 35vh , left 48vw top 52vh;
+    font-family: "Kumbh Sans", sans-serif;
+    font-optical-sizing: auto;
+    background-position: fixed;
+}
+.main-page{
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate( -50%,-50%);
+    width: 350px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px 7px rgba(94, 89, 89, 0.345)
+}
+.back{
+    background-image: url(images/bg-pattern-card.svg);
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+img{ 
+    left: 50%;
+    top: 150px;
+    position: absolute;
+    transform: translate( -50%,-50%);
+    border-radius: 50px;
+    border-color: white;
+    border-style:solid;
+    border-width: 5px;
+    
+}
+.information{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    margin-left: 120px;
+    font-size: 18px;
+    position: relative;
+}
+.name , .num{
+   color:  hsl(229, 23%, 23%);
+   font-weight: 700;
+   position: relative;
+   text-align: center;
+}
+.age{
+    color: hsl(0, 0%, 59%); 
+    position: relative;
+}
+.city{ 
+    color: hsl(0, 0%, 59%); 
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+}
+hr{ 
+    color: hsl(0, 0%, 59%); 
+    margin-top: 30px;
+    position: relative;
+    
+}
+.acount-information{ 
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    margin-left: 30px;
+}
+.gride-block{ 
+    text-align: center;
+    display: grid;
+    grid-template-rows: 30px 1fr;
+    position: relative;
+}
+.attribution{
+    margin-top: 525px;
+    position: relative;
+    
+}
+@media  (max-width: 375px){ 
+    .main-page{ 
+     max-width: 90%;
+    }
+
+}
